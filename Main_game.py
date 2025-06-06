@@ -19,6 +19,7 @@ def mainMenuChoice():
   else:
     print("Invalid Input \n")
     mainMenuChoice()    ##Repeatedly takes input if choice is invalid 
+
 def gameLoop(p_he):
    ## The game loop will be there here.
 
@@ -33,7 +34,7 @@ def gameLoop(p_he):
 def gameEnd(p_health): ##Ends the game if player health goes below zero (or equal) waits for some time and then shows main menu again
   if p_health <= 0:
     time.sleep(1)
-    print("\n\n         Game Over!   \n\n")
+    print("\n         Game Over!   \n")
     time.sleep(1)
     mainMenuDisplay()
 
