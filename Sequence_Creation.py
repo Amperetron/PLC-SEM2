@@ -21,4 +21,6 @@ def sequence_creation(n):
         print(char)
         seq.append(char) #if choice is lowercase, we first convert uppercase ascii to lowercase and concatenate
 
+  return seq
+
  
