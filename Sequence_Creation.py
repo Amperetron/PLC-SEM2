@@ -17,7 +17,4 @@ def sequence_creation(n):
         seq += " "
 
   return seq
-
-
-
-     
+ 

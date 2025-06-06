@@ -1,0 +1,9 @@
+**********************************
+
+      Welcome to the Game! 
+
+What would you like to do:
+  1. Play the Game 
+  2. Exit 
+
+**********************************
