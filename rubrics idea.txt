@@ -1,6 +1,6 @@
 Bro lets do it so:
-1.  Damage = ( extra time elapsed ** 0.5 )*(Inaccuracies)
-2.  here damage is calculated, i think we need to add a minimum time before which damage is 0 
+1.  Damage = ( extra time elapsed ** 0.5 )+(damage*Inaccuracies)
+2.  here damage is calculated, i think we need to add a minimum time before which time induced damage is 0 
 3.  The program has some level logic, yeah difficulty increases: 
      1. each level will mark increment of 4 characters
      2. proportinally the damage of time time will get subtle by (<current level> - 1)**0.5, hence itll form a smooth slope 
