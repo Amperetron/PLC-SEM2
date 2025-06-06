@@ -1,0 +1,16 @@
+Bro lets do it so:
+1.  Damage = ( extra time elapsed ** 0.5 )*(Inaccuracies)
+2.  here damage is calculated, i think we need to add a minimum time before which damage is 0 
+3.  The program has some level logic, yeah difficulty increases: 
+     1. each level will mark increment of 4 characters
+     2. proportinally the damage of time time will get subtle by (<current level> - 1)**0.5, hence itll form a smooth slope 
+        that increases steadily. so gradually there will be lesser damage at the same time but the damage overall will increase with level
+        what i mean to say is the damage intensity increases anyways but at the same point of time it'll remain the same.
+     3. the inaccuracies will be the result of your skill issues 
+4. we gotta test out these theories and make a simple total health, deduct points proportionally 
+   if the person loses all his points in lvl x he is declared to have reached lvl x 
+   no real winning criteria, simple as monkey type showing wpm. we show level reached.
+5. we can revise rubrics to make better sense of because idts maam will have enough patience to listen out. 
+6. but we have to atleast firm up the enemy logic:
+   A. do we keep the random enemy 
+   B. do we stick to the monkey type ideology i proposed 
