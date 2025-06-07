@@ -1,7 +1,6 @@
-import time
+import BackendEngine as BE
 
-p_max_health = 100.0 #maximum player health at the beginning of the game 
-e_max_health = 100.0 #this initialization for the time being  
+p_max_health = 100.0 #maximum player health at the beginning of the game  
 
 def mainMenuDisplay():
   mainf = open("Main_Menu.txt",'r')
@@ -21,23 +20,11 @@ def mainMenuChoice():
     mainMenuChoice()    ##Repeatedly takes input if choice is invalid 
 
 def gameLoop(p_he):
-   ## The game loop will be there here.
+  first_level = 1
 
-   ##For debugging purpose
-    while p_he > 0:
-      dmg = int(input("Enter damage: "))
-      p_he -= dmg
-      print(f"Player health {p_he}")
-    gameEnd(p_he)
-    ## Just to check if other functions are working
-
-def gameEnd(p_health): ##Ends the game if player health goes below zero (or equal) waits for some time and then shows main menu again
-  if p_health <= 0:
-    time.sleep(1)
-    print("\n         Game Over!   \n")
-    time.sleep(1)
-    mainMenuDisplay()
-
-
+  #in the beginning of the game, we initalize current health to max health 
+  current_ph = p_he
+  BE.level_load(first_level,current_ph)
+  mainMenuDisplay()
 
 mainMenuDisplay()

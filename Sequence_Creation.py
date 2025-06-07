@@ -3,8 +3,6 @@ import random
 def sequence_creation(n):
   seq = []
   for i in range (n):
-    print(f"{i}.",end="")
-    char = ""
 
     l_choice = random.randint(0,1)  #To choose one between uppercase and lowercase for each charcter
 
@@ -13,12 +11,10 @@ def sequence_creation(n):
     match l_choice:
       case 0: #For upppercase
         char = chr(ch_choice)
-        print(char)
         seq.append(char) #We  simply concatenate to seq by converting to ascii
 
       case 1: #For lowercase
         char = chr(ch_choice + 32)
-        print(char)
         seq.append(char) #if choice is lowercase, we first convert uppercase ascii to lowercase and concatenate
 
   return seq
