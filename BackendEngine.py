@@ -9,20 +9,22 @@ def level_load(current_level,current_ph):
   #Before loading a level checks if current player health is less than 0, if true then control goes back to gameloop() in main game
   if current_ph <=0:
       gameEnd()
+      clear_screen() 
       return
 
   #Before loading a level checks if player has finishe all 5 levels, if true then control goes back to gameloop() in main game after typing "You win the game"
   if current_level > 5:
     print("\n         You win the game!         \n\n")
+    clear_screen() 
     return
-
+  
+  clear_screen()  
   print("\n**********************************")
   print(f"           Level - {current_level}         \n")
   work_loop(current_ph,current_level)
 
 def next_level_load(c_level,p_health): ##enemy health and player health taken as arguments, this will do nothing rn since we dont have a loop.
   c_level += 1 
-  clear_screen()
   level_load(c_level,p_health) ## when the condition is true it increments the level count and goes back to the level_load() to load next level.
 
 
