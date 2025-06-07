@@ -60,11 +60,11 @@ def Input_elapsed(char_list):
 
 def damage_count(elapsed_time,innacuracies): ##Needs tweeking, contains all damage to be done wrt innaccuracies
     if innacuracies == 0:
-        e_dmg = round(500/elapsed_time,3)
+        e_dmg = round(200/elapsed_time,3)
         p_dmg = 0
     else:
-        e_dmg = round(200/elapsed_time,3)
-        p_dmg = round((e_dmg * 0.15) * innacuracies,3)
+        e_dmg = round(150/elapsed_time,3)
+        p_dmg = round((e_dmg * 0.2) * innacuracies,3)
     return e_dmg,p_dmg
 
 
